@@ -1,0 +1,4 @@
+1. Change the bullet geometry from CylinderGeometry to SphereGeometry.
+2. Update the bullet material color to black.
+3. Ensure the radius of the sphere is set to 0.2.
+4. Test the changes to confirm the bullets are rendered as black spheres.
