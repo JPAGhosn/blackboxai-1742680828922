@@ -1,4 +1,18 @@
-1. Change the bullet geometry from CylinderGeometry to SphereGeometry.
-2. Update the bullet material color to black.
-3. Ensure the radius of the sphere is set to 0.2.
-4. Test the changes to confirm the bullets are rendered as black spheres.
+1. **Add Shooting Mechanism**:
+   - Create a function `shoot()` in `enemyBot.js` that:
+     - Instantiates a bullet object (spherical).
+     - Sets the bullet's position to the bot's position.
+     - Applies a velocity to the bullet in the direction the bot is facing.
+     - Adds the bullet to the scene and manages its lifecycle (e.g., remove it after a certain distance or time).
+
+2. **Implement HP Display**:
+   - Create a property for each enemy to hold its HP.
+   - Modify the bullet collision detection logic to check if a bullet hits an enemy.
+   - If a bullet hits an enemy, reduce the enemy's HP and display it on the screen (e.g., using a simple text overlay or a health bar).
+
+3. **Update Rendering Logic**:
+   - Ensure that the shooting and HP display logic is integrated into the game loop for continuous updates.
+
+4. **Testing**:
+   - Test the shooting mechanism to ensure bullets are fired correctly.
+   - Test the HP display to ensure it only shows when the enemy is hit.
